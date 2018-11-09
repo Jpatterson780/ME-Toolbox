@@ -63,8 +63,9 @@ tauMax(3) = (Sigma(2)-Sigma(3))/2;
 sigAvg(3) = (Sigma(2)+Sigma(3))/2;
 
 % Set Sigma values which are incredibly small to zero
+absSigma = abs(Sigma);
 for i = 1:3
-    if Sigma(i) < .00001
+    if absSigma(i) < .00001
         Sigma(i) = 0;
     end
 end
