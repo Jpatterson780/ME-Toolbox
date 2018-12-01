@@ -1,7 +1,13 @@
 %% Brittle Failure Theories Safety Factor Calculator
 % Contributors: Josh Patterson
-% Code Version 1.0
-% Last Updated 11/8/2018
+% Code Version 1.1
+% Last Updated 11/30/2018
+
+% Given Sigma(x y z), tau(yz xz xy), ultimate tensile strength, and ultimate compressive strength,
+% principle stresses are calculated and using those principle stresses, the safety factors are computed 
+% using Maximum Normal Stress, Brittle Coulomb-Mohr, and Modified Mohr Theories. 
+
+%                  **--Requires brittle failure--**  (strain < 0.05 is normally an acceptable guideline)
 
 %% Initialization
 clear; close all; clc;
